@@ -1,0 +1,8 @@
+export const origin = 'origin'
+export const string = 'string'
+export const number = 'number'
+export const dateTime = 'dateTime'
+export const boolean = 'boolean'
+export const object = 'object'
+export const array = 'array'
+export const func = 'func'
