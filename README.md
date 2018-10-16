@@ -1,4 +1,4 @@
-# ShapeJson
+# shape_json
 
 [!][NPM version][npm-image]][npm-url]
 
@@ -9,11 +9,11 @@ A tool to help for shaping properties of json object to the type and name you wa
 ## Install
 
 ```shell
-$ yarn add ShapeJson
+$ yarn add shape_json
 ```
 
 ```js
-const ShapeJson = require('ShapeJson')
+const shape_json = require('shape_json')
 ```
 
 ## Usage
@@ -33,7 +33,7 @@ const schema = {
   adsetName: {},
   clicks: {
     to: 'cc',
-    type: ShapeJson.type.number
+    type: shape_json.type.number
   }
 }
 
@@ -44,7 +44,7 @@ const option = {
   keyDuplicate: 'keep-schema'
 }
 
-console.log(ShapeJson.shape(origin, schema, option))
+console.log(shape_json.shape(origin, schema, option))
 
 /**
  * {

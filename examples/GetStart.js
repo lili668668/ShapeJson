@@ -1,4 +1,4 @@
-import ShapeJson from 'ShapeJson'
+import shape_json from 'shape_json'
 
 const origin = {
   campaignName: 'test',
@@ -12,11 +12,11 @@ const schema = {
     to: 'campaign'
   },
   clicks: {
-    type: ShapeJson.type.number
+    type: shape_json.type.number
   },
   start_date: {
     to: 'date',
-    type: ShapeJson.type.dateTime
+    type: shape_json.type.dateTime
   }
 }
 
@@ -27,4 +27,4 @@ const option = {
   keyDuplicate: 'keep-schema' // ['keep-schema', 'keep-origin', 'show-error']
 }
 
-console.log(ShapeJson.shape(origin, schema, option))
+console.log(shape_json.shape(origin, schema, option))
