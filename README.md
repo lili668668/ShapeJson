@@ -1,6 +1,6 @@
 # shape-json
 
-[![NPM version][npm-image]][npm-url]
+[!][NPM version][npm-image]][npm-url]
 
 ## Introduction
 
