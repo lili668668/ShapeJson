@@ -1,6 +1,6 @@
 {
   "name": "@ballfish/shape_json",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Design a schema to shape JSON object",
   "main": "index.js",
   "scripts": {
