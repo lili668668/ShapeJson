@@ -32,6 +32,7 @@ const schema = {
   },
   adsetName: {},
   clicks: {
+    to: 'cc',
     type: ShapeJson.type.number
   }
 }
@@ -50,7 +51,7 @@ console.log(ShapeJson.shape(origin, schema, option))
  *  name: 'wow',
  *  campaign: 'test',
  *  adsetName: 'owo',
- *  clicks: 123
+ *  cc: 123
  * }
  */
 ```
