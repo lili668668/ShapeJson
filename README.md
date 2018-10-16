@@ -1,4 +1,4 @@
-# shape-json
+# ShapeJson
 
 [!][NPM version][npm-image]][npm-url]
 
@@ -9,11 +9,11 @@ A tool to help for shaping properties of json object to the type and name you wa
 ## Install
 
 ```shell
-$ yarn add shape-json
+$ yarn add ShapeJson
 ```
 
 ```js
-const ShapeJson = require('shape-json')
+const ShapeJson = require('ShapeJson')
 ```
 
 ## Usage

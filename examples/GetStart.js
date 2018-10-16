@@ -1,4 +1,4 @@
-import ShapeJson from 'shape-json'
+import ShapeJson from 'ShapeJson'
 
 const origin = {
   campaignName: 'test',

@@ -1,5 +1,5 @@
 {
-  "name": "shape-json",
+  "name": "ShapeJson",
   "version": "0.0.1",
   "description": "Design a schema to shape JSON object",
   "main": "index.js",
@@ -7,8 +7,8 @@
     "build": "npm run build:clean && npm run build:babel && npm run build:browserify && npm run build:uglify",
     "build:clean": "rimraf lib/* dist/*",
     "build:babel": "babel src -d lib",
-    "build:browserify": "browserify src/index.js -s Shape -t [babelify] -o dist/shape-json.js",
-    "build:uglify": "uglifyjs dist/shape-json.js --comments '/!/' -m screw_ie8=true -c screw_ie8=true,unused=false -o dist/shape-json.min.js",
+    "build:browserify": "browserify src/index.js -s Shape -t [babelify] -o dist/ShapeJson.js",
+    "build:uglify": "uglifyjs dist/ShapeJson.js --comments '/!/' -m screw_ie8=true -c screw_ie8=true,unused=false -o dist/ShapeJson.min.js",
     "test": "cross-env NODE_ENV=test nyc --reporter=text-summary mocha --compilers js:babel-register test/**/*.test.js",
     "coverage": "nyc report --reporter=html",
     "lint": "eslint src test"
@@ -20,16 +20,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lili668668/shape-json.git"
+    "url": "git+https://github.com/lili668668/ShapeJson.git"
   },
   "keywords": [
   ],
   "author": "Tzu-Yin Hong <lili668668@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lili668668/shape-json/issues"
+    "url": "https://github.com/lili668668/ShapeJson/issues"
   },
-  "homepage": "https://github.com/lili668668/shape-json#readme",
+  "homepage": "https://github.com/lili668668/ShapeJson#readme",
   "devDependencies": {
     "babel-cli": "^6.14.0",
     "babel-eslint": "^6.1.2",
