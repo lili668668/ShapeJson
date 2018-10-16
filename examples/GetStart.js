@@ -1,4 +1,4 @@
-import shape_json from '@ballfish/shape_json'
+import ShapeJson from '@ballfish/shape_json'
 
 const origin = {
   campaignName: 'test',
@@ -27,4 +27,4 @@ const option = {
   keyDuplicate: 'keep-schema' // ['keep-schema', 'keep-origin', 'show-error']
 }
 
-console.log(shape_json.shape(origin, schema, option))
+console.log(ShapeJson.shape(origin, schema, option))

@@ -13,7 +13,7 @@ $ yarn add shape_json
 ```
 
 ```js
-const shape_json = require('@ballfish/shape_json')
+const ShapeJson = require('@ballfish/shape_json')
 ```
 
 ## Usage
@@ -44,7 +44,7 @@ const option = {
   keyDuplicate: 'keep-schema'
 }
 
-console.log(shape_json.shape(origin, schema, option))
+console.log(ShapeJson.shape(origin, schema, option))
 
 /**
  * {
