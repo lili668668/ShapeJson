@@ -1,6 +1,6 @@
 # shape_json
 
-[!][NPM version][npm-image]][npm-url]
+[![NPM version][npm-image]][npm-url]
 
 ## Introduction
 
@@ -55,3 +55,6 @@ console.log(shape_json.shape(origin, schema, option))
  * }
  */
 ```
+
+[npm-image]: https://img.shields.io/npm/v/@ballfish/shape_json.svg
+[npm-url]: https://npmjs.org/package/@ballfish/shape_json
