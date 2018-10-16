@@ -1,4 +1,4 @@
-import shape_json from 'shape_json'
+import shape_json from '@ballfish/shape_json'
 
 const origin = {
   campaignName: 'test',

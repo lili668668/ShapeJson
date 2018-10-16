@@ -13,7 +13,7 @@ $ yarn add shape_json
 ```
 
 ```js
-const shape_json = require('shape_json')
+const shape_json = require('@ballfish/shape_json')
 ```
 
 ## Usage

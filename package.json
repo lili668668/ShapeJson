@@ -1,5 +1,5 @@
 {
-  "name": "shape_json",
+  "name": "@ballfish/shape_json",
   "version": "0.0.1",
   "description": "Design a schema to shape JSON object",
   "main": "index.js",
