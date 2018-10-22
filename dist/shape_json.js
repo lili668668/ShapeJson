@@ -50,11 +50,11 @@ function func() {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.type = exports.default = undefined;
+exports.type = exports.shape = undefined;
 
 var _shape = require('./shape');
 
-Object.defineProperty(exports, 'default', {
+Object.defineProperty(exports, 'shape', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_shape).default;
