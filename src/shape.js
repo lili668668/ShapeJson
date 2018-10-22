@@ -17,6 +17,7 @@ export default function (object, schema, option = {}) {
       const to = schema[key].to || key
       const type = schema[key].type || Type.origin
       const isExist = objectKeys.includes(key)
+      const isDuplicate = Object.keys(shapedObject).includes(to)
       if (!isExist && option.notFoundProperties === 'ignore') return
       if (!isExist && option.notFoundProperties === 'show-error') throw new Error(`No property named ${key}`)
       if (!isExist && option.notFoundProperties === 'give-default') {
@@ -31,7 +32,6 @@ export default function (object, schema, option = {}) {
         shapedObject[to] = undefined
         return
       }
-      const isDuplicate = Object.keys(shapedObject).includes(to)
       if (option.keyDuplicate === 'keep-origin' && isDuplicate) return
       if (option.keyDuplicate === 'show-error' && isDuplicate) throw new Error(`Key "${to}" is duplicate`)
       if (typeof schema[key].customParse === 'function') {
