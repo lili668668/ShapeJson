@@ -166,6 +166,7 @@ exports.default = function (object, schema) {
     var to = schema[key].to || key;
     var type = schema[key].type || Type.origin;
     var isExist = objectKeys.includes(key);
+    var isDuplicate = Object.keys(shapedObject).includes(to);
     if (!isExist && option.notFoundProperties === 'ignore') return;
     if (!isExist && option.notFoundProperties === 'show-error') throw new Error('No property named ' + key);
     if (!isExist && option.notFoundProperties === 'give-default') {
@@ -180,7 +181,6 @@ exports.default = function (object, schema) {
       shapedObject[to] = undefined;
       return;
     }
-    var isDuplicate = Object.keys(shapedObject).includes(to);
     if (option.keyDuplicate === 'keep-origin' && isDuplicate) return;
     if (option.keyDuplicate === 'show-error' && isDuplicate) throw new Error('Key "' + to + '" is duplicate');
     if (typeof schema[key].customParse === 'function') {
