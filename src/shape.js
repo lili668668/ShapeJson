@@ -21,14 +21,14 @@ export default function (object, schema, option = {}) {
       if (!isExist && option.notFoundProperties === 'show-error') throw new Error(`No property named ${key}`)
       if (!isExist && option.notFoundProperties === 'give-default') {
         if (typeof schema[key].customDefault === 'function') {
-          shapedObject[key] = schema[key].customDefault()
+          shapedObject[to] = schema[key].customDefault()
           return
         }
-        shapedObject[key] = Default[type]()
+        shapedObject[to] = Default[type]()
         return
       }
       if (!isExist) {
-        shapedObject[key] = undefined
+        shapedObject[to] = undefined
         return
       }
       const isDuplicate = Object.keys(shapedObject).includes(to)
